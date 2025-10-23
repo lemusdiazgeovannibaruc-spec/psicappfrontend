@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos requeridos -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31"
+        android:usesCleartextTraffic="true">
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.myapplication.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Registro Activity -->
+        <activity
+            android:name="com.example.myapplication.RegistroActivity"
+            android:exported="true" />
+
+        <!-- Login Activity -->
+        <activity android:name="com.example.myapplication.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Paciente Dashboard Activity -->
+        <activity
+            android:name="com.example.myapplication.ActivityPacienteDashboard"
+            android:exported="true" />
+
+        <!-- Doctor Dashboard Activity -->
+        <activity android:name="com.example.myapplication.DoctorDashboardActivity" />
+
+        <activity
+            android:name="com.example.myapplication.GestionHorariosActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityGenerarCita"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.VerCitasActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.PantallaPrincipalPaciente"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityAgregarReseña"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityReseñas"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityVerReseñas"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.AgregarNotasActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityNotasDoctor"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityMensajeriaDoctor"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityConversacion"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityConversacionPaciente"
+            android:exported="true" />
+        <activity
+            android:name="com.example.myapplication.ActivityMensajeriaPaciente"
+            android:exported="true" />
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,72 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_backgraund2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Título "Mensajería" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mensajería"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:padding="8dp" />
+
+        <!-- Selector de pacientes (Spinner) -->
+        <Spinner
+            android:id="@+id/spinnerPacientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Lista de mensajes (ocupa el espacio sobrante) -->
+        <ListView
+            android:id="@+id/listViewMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+        <!-- Campo para escribir mensaje -->
+        <EditText
+            android:id="@+id/editTextMensaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Escribe tu mensaje aquí"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Botón para enviar mensaje con estilo Material -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonEnviar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

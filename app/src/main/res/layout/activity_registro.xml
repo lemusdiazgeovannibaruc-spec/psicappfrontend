@@ -1,0 +1,235 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@drawable/ic_backgraund2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Título de la pantalla -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registro de Usuario"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:layout_marginTop="40dp" />
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Teléfono -->
+        <EditText
+            android:id="@+id/editTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Fecha de Nacimiento -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFechaNacimiento"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fecha de Nacimiento"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Género -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Género"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <CheckBox
+                android:id="@+id/checkMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino"
+                android:fontFamily="sans-serif-light" />
+
+            <CheckBox
+                android:id="@+id/checkFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="16dp" />
+
+            <CheckBox
+                android:id="@+id/checkOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="16dp" />
+        </LinearLayout>
+
+        <!-- Dirección -->
+        <EditText
+            android:id="@+id/editDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="textPostalAddress"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para Obtener Ubicación -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnObtenerUbicacion"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Obtener Ubicación"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Foto de Perfil -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSeleccionarFoto"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Foto de Perfil"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/imgFotoPerfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerCrop" />
+
+        <!-- Rol -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Rol"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerRol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Campos adicionales para doctores -->
+        <TextView
+            android:id="@+id/tvEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Especialidad"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinnerEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editLicencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Licencia Médica"
+            android:visibility="gone"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/rounded_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botón Registrar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistrar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:layout_marginTop="20dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

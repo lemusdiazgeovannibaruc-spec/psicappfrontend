@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/ic_backgraund2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Título de bienvenida -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, Paciente"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:padding="8dp" />
+
+        <!-- Campo para buscar doctores -->
+        <EditText
+            android:id="@+id/etBuscarDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Buscar doctor (por especialidad, ubicación)"
+            android:fontFamily="sans-serif-light"
+            android:padding="10dp"
+            android:background="@drawable/rounded_background"
+            android:layout_marginTop="16dp"
+            android:inputType="text" />
+
+        <!-- Botón para iniciar la búsqueda (MaterialButton) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuscar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="12dp"
+            android:padding="12dp" />
+
+        <!-- Lista para mostrar resultados -->
+        <ListView
+            android:id="@+id/lvDoctores"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</ScrollView>

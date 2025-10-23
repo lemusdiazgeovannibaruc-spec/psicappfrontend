@@ -1,0 +1,138 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgraund2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Título central: Gestión de Horarios -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Horarios"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:padding="8dp" />
+
+        <!-- Botón: Seleccionar Fecha (MaterialButton) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectDate"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Fecha"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            :cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Texto: Fecha seleccionada -->
+        <TextView
+            android:id="@+id/tvSelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha seleccionada: Ninguna"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <!-- Botón: Seleccionar Hora Inicio -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectStartTime"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Hora Inicio"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Texto: Hora de Inicio -->
+        <TextView
+            android:id="@+id/tvSelectedStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora de Inicio: Ninguna"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <!-- Botón: Seleccionar Hora Fin -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectEndTime"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Hora Fin"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- Texto: Hora de Fin -->
+        <TextView
+            android:id="@+id/tvSelectedEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hora de Fin: Ninguna"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/black"
+            android:padding="8dp" />
+
+        <!-- Botón: Guardar Horario -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveSchedule"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Horario"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Imagen Decorativa (Extra) -->
+        <ImageView
+            android:id="@+id/imgScheduleDecor"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/horaerio"
+            android:contentDescription="Ilustración de horario" />
+
+        <!-- Contenedor de Horarios Dinámicos -->
+        <LinearLayout
+            android:id="@+id/horariosLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,99 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="@drawable/ic_backgraund2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Imagen de perfil -->
+        <ImageView
+            android:id="@+id/imgFotoPerfil"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/circular_background" />
+
+        <!-- Texto de bienvenida -->
+        <TextView
+            android:id="@+id/txtBienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:padding="16dp" />
+
+        <!-- Botón: Agendar Cita -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAgendarCita"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agendar Cita"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Botón: Ver Reseñas -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReseñas"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Reseñas"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Botón: Notas del Doctor -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNotasDoctor"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notas del Doctor"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+        <!-- Botón: Mensajería -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMensajeria"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensajería"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginTop="16dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>

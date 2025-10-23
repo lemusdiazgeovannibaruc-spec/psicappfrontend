@@ -1,0 +1,21 @@
+<resources>
+
+        <string name="app_name">MyApplication</string>
+        <string-array name="roles_array">
+            <item>paciente</item>
+            <item>doctor</item>
+        </string-array>
+
+        <string-array name="especialidades_array">
+            <item>Cardiología</item>
+            <item>Dermatología</item>
+            <item>Pediatría</item>
+            <item>Neurología</item>
+            <item>Ginecología</item>
+            <item>Traumatología</item>
+            <item>Psicología</item>
+            <item>Odontología</item>
+        </string-array>
+
+
+</resources>

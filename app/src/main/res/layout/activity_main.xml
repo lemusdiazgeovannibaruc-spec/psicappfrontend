@@ -1,0 +1,127 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgraund"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:contentDescription="Logo de DocApp"
+            android:src="@drawable/ic_logo" />
+
+        <!-- Texto de bienvenida con fuente "sans-serif-condensed" -->
+        <TextView
+            android:id="@+id/txtBienvenida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bienvenido a DocApp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center" />
+
+        <!-- Subtítulo con fuente "sans-serif-light" -->
+        <TextView
+            android:id="@+id/txtSubtitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Conecta doctores y pacientes fácilmente"
+            android:textSize="16sp"
+            android:textColor="@color/gray"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center" />
+
+        <!-- Sección de botones en horizontal -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <!-- Iniciar Sesión -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginRight="40dp">
+
+                <ImageButton
+                    android:id="@+id/btnLogin"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_login"
+                    android:contentDescription="Iniciar Sesión"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/txtLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Iniciar Sesión"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+
+            <!-- Registrarse -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnRegistro"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_register"
+                    android:contentDescription="Registrarse"
+                    android:scaleType="centerInside" />
+
+                <TextView
+                    android:id="@+id/txtRegistro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Registrarse"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/txtDescripcion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_background"
+            android:text="DocApp te permite agendar citas médicas, consultar disponibilidad de doctores y gestionar tu historial médico, todo en un solo lugar."
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>

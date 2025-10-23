@@ -1,0 +1,100 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgraund2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Imagen de perfil del doctor -->
+        <ImageView
+            android:id="@+id/imgFotoPerfilDoctor"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/circular_background" />
+
+        <!-- Texto de bienvenida -->
+        <TextView
+            android:id="@+id/txtBienvenidoDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, Doctor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
+
+        <!-- Botón: Gestionar Horarios -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGestionHorarios"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestionar Horarios"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Botón: Ver Citas -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerCitas"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Citas"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Botón: Agregar Notas -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAgregarNotas"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Notas"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <!-- Botón: Mensajería -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMensajeria"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensajería"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:backgroundTint="@color/purple_500"
+            app:cornerRadius="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+    </LinearLayout>
+</ScrollView>
